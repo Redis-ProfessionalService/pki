@@ -1,6 +1,6 @@
 he
-#### Line 8 should have the FQDN for the cluster.
-#### Line 18 should have all alt name, for example wildcard  (*.redis.local) or list of individual endpoint for the database. 
+#### Line 8 should have the CN as FQDN for the cluster.
+#### Line 18 should have Subject Alternative Name( SaN), for example wildcard  (*.redis.local) or list of individual endpoint for the database. 
 
 ```
 Line 8: FQDN = redis.local
