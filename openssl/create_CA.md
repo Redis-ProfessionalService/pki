@@ -8,7 +8,7 @@ openssl req -new -x509 -key ca.key -out ca.crt
 
 #### create a server certificate using the csr.
 ```
-openssl x509 -req -in myserver.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out myserver.crt
+openssl x509 -req -days 365 -in myserver.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out myserver.crt
 ```
 
 #### view the certificate
