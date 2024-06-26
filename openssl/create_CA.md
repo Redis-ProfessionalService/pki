@@ -26,3 +26,9 @@ rladmin cluster certificate set proxy certificate_file myserver.crt  key_file my
 rladmin cluster certificate set syncer certificate_file myserver.crt  key_file myserver.key
 rladmin cluster certificate set metrics_exporter certificate_file myserver.crt  key_file myserver.key
 ```
+
+#### View the certificate on the redis API endpoint
+```
+openssl s_client -connect  localhost:9443
+
+```
