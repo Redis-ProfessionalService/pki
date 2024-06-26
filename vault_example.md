@@ -1,4 +1,4 @@
-
+```
 vault server -dev > vault &
 
 export VAULT_ADDR=http://127.0.0.1:8200
@@ -63,3 +63,4 @@ rladmin cluster certificate set <cert-name> certificate_file cert.pem key_file k
 ###ubuntu
 ### add the root ca (CA_cert.crt) and issuing_ca to  /usr/local/share/ca-certificates/
 ### run update-ca-certificates
+```
