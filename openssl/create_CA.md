@@ -32,3 +32,9 @@ rladmin cluster certificate set metrics_exporter certificate_file myserver.crt  
 openssl s_client -connect  localhost:9443
 
 ```
+
+```
+curl -v --cacert ca.crt  https://redis.local:9443/v1/cluster  --resolve redis.local:9443:127.0.0.1
+```
+
+
