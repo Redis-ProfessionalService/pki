@@ -1,9 +1,11 @@
-
+he
+#### Line 8 should have the FQDN for the cluster.
+#### Line 18 should have all alt name, for example wildcard  (*.redis.local) or list of individual endpoint for the database. 
 
 ```
 Line 8: FQDN = redis.local
 
-ALTNAMES = DNS:$FQDN , DNS:redis-12000.redis.local #, DNS: *.redis.local
+Line 18: ALTNAMES = DNS:$FQDN , DNS:redis-12000.redis.local #, DNS: *.redis.local
 ```
 
 ### How to create a CSR with OpenSSL
