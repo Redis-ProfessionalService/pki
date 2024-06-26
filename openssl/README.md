@@ -1,4 +1,11 @@
 
+
+```
+Line 8: FQDN = redis.local
+
+ALTNAMES = DNS:$FQDN , DNS:redis-12000.redis.local #, DNS: *.redis.local
+```
+
 ### How to create a CSR with OpenSSL
 ```
 touch myserver.key
