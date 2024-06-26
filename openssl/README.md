@@ -74,3 +74,6 @@ Certificate Request:
         4c:ee:aa:82:ab:88:3d:be:20:0a:cb:68:3c:31:79:6e:40:68:
         18:74:c7:d6
 ```
+
+#### the csr file should be sent to a CA for signed vertificate. 
+
