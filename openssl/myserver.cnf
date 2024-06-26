@@ -1,4 +1,4 @@
-```
+
 # OpenSSL configuration file for creating a CSR for a server certificate
 # Adapt at least the FQDN and ORGNAME lines, and then run 
 # openssl req -new -config myserver.cnf -keyout myserver.key -out myserver.csr
@@ -33,4 +33,4 @@ CN = $FQDN
 
 [ req_ext ]
 subjectAltName = $ALTNAMES
-```
+
