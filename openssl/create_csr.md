@@ -76,5 +76,5 @@ Certificate Request:
         18:74:c7:d6
 ```
 
-##### the csr file should be sent to a CA for signed vertificate. 
+##### the csr file should be sent to a CA for signed certificate. 
 
