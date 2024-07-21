@@ -123,5 +123,6 @@ cat client.crt intermediate_1_ca.crt root_ca.crt > client_chain.crt
 
 ### Set up the Redis database with ca_chain.crt
 
+![mtls](./mtls.png)
 
 
