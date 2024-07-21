@@ -125,5 +125,13 @@ cat client.crt intermediate_1_ca.crt root_ca.crt > client_chain.crt
 
 ![mtls](./image/mtls.png)
 
-1) add the ca_chain.crt 
+1) add the ca_chain.crt as Explicit Trust.
+2) Click the By Subject Alternative Name(SAN)/Common Name(CN) only
+3) Add www.client.com as CN name
+
+
+### Redis client
+```
+redis-cli -p 13000 --tls --insecure --cert client_chain.crt --key client.key
+```
 
