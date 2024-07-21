@@ -1,0 +1,18 @@
+# root_ca.cnf
+
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+[dn]
+C = IL
+ST = Tel-Aviv
+L = Locality
+O = RootCAOrg
+OU = Security
+CN = www.root-ca-org.com
+
+[req_ext]
+basicConstraints = critical, CA:TRUE
