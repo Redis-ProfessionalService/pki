@@ -73,6 +73,8 @@ openssl x509 -req -in intermediate_1_ca.csr -CA root_ca.crt -CAkey root_ca.key -
 openssl x509 -in intermediate_1_ca.crt -text
 ```
 
+Create the certificate chain:
+
 ```
 cat intermediate_1_ca.crt  root_ca.crt > ca_chain.crt
 ```
