@@ -1,0 +1,17 @@
+# client.cnf
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+[dn]
+C = FR
+ST = Paris
+L = Paris
+O = Operations
+OU = Operations
+CN = www.client.com
+[req_ext]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = clientAuth
