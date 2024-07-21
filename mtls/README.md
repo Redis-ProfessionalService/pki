@@ -79,3 +79,45 @@ Create the certificate chain:
 cat intermediate_1_ca.crt  root_ca.crt > ca_chain.crt
 ```
 
+### Leaf client certificate:
+
+```
+# client.cnf
+
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+[dn]
+C = FR
+ST = Paris
+L = Paris
+O = Operations
+OU = Operations
+CN = www.client.com
+
+[req_ext]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = clientAuth
+```
+
+Generate the client key:
+```
+openssl genpkey -algorithm RSA -out client.key
+```
+Generate the client.csr file using the client key and client.cnf file:
+```
+openssl req -new -key client.key -out client.csr -config client.cnf
+```
+Generate the client.crt file, using the intermediate CA certificate, the intermediate CA key, the client.cnf file and the client.csr:
+```
+openssl x509 -req -in client.csr -CA intermediate_1_ca.crt -CAkey intermediate_1_ca.key -CAcreateserial -out client.crt -days 1825 -sha256 -extfile client.cnf -extensions req_ext
+```
+Finally, create a client certificate chain:
+```
+cat client.crt intermediate_1_ca.crt root_ca.crt > client_chain.crt
+```
+
