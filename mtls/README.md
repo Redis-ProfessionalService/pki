@@ -125,4 +125,5 @@ cat client.crt intermediate_1_ca.crt root_ca.crt > client_chain.crt
 
 ![mtls](./image/mtls.png)
 
+1) add the ca_chain.crt 
 
