@@ -2,7 +2,9 @@
 ```
 
 kubectl get secrets nginx-ingress-ingress-nginx-admission -o yaml
+```
 
+```
 
 apiVersion: v1
 data:
@@ -12,4 +14,5 @@ data:
 kind: Secret
 
 ```
+
 
