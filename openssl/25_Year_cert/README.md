@@ -1,4 +1,5 @@
 ```
+# Valid until 
 openssl x509  -in myserver.crt   -noout -text -nameopt sep_multiline
 
 
@@ -6,15 +7,15 @@ Certificate:
     Data:
         Version: 1 (0x0)
         Serial Number:
-            71:1b:d5:b0:03:71:e3:2d:8a:91:f9:cd:5d:fd:86:75:5c:4a:0f:76
+            71:1b:d5:b0:03:71:e3:2d:8a:91:f9:cd:5d:fd:86:75:5c:4a:0f:77
         Signature Algorithm: sha256WithRSAEncryption
         Issuer:
             C=AU
             ST=Some-State
             O=Internet Widgits Pty Ltd
         Validity
-            Not Before: Nov 21 20:03:39 2024 GMT
-            Not After : Nov 21 20:03:39 2025 GMT
+            Not Before: Nov 21 20:08:33 2024 GMT
+            Not After : Jul 13 20:08:33 2049 GMT
         Subject:
             C=CH
             O=Example University
@@ -44,19 +45,19 @@ Certificate:
                 Exponent: 65537 (0x10001)
     Signature Algorithm: sha256WithRSAEncryption
     Signature Value:
-        b8:c7:3c:18:3b:f6:4e:21:1a:f5:99:04:33:b8:52:c8:58:ab:
-        58:45:f1:cc:26:3f:45:d9:56:61:5e:f1:14:3b:d9:01:af:d0:
-        b3:cb:93:56:1c:96:ea:04:37:2b:22:81:62:24:1f:75:8e:38:
-        2d:c9:ab:32:28:f7:f3:50:65:52:83:b6:25:a7:0e:6f:4d:ef:
-        5b:fb:fb:60:02:7b:61:41:ed:b7:47:d2:6d:dc:91:87:47:cf:
-        9e:d3:d5:3f:61:84:2b:26:39:46:13:e2:fc:4c:92:35:3a:20:
-        5d:43:ff:20:be:45:6c:80:91:62:40:c5:38:36:52:8c:a4:c9:
-        0a:08:8f:29:ca:d1:50:4c:58:a4:d5:1e:8e:1a:5d:9c:b1:66:
-        1d:00:2d:5f:0d:bb:f9:b6:34:0d:5c:0c:30:f8:e7:c2:b5:be:
-        a9:a7:ab:7d:e7:0a:67:95:f3:22:85:35:e8:c1:50:7c:b0:1e:
-        d1:2f:af:22:eb:bb:5c:b1:9d:aa:80:f1:a9:1d:1c:f8:07:9e:
-        ae:14:67:8e:59:16:14:7e:af:c2:34:07:7b:20:03:fa:ba:63:
-        05:18:91:b0:ed:3f:82:dc:94:80:0a:7a:e9:60:a3:72:ef:f9:
-        ba:f4:0a:b1:5c:37:aa:50:06:22:76:83:da:03:6a:25:69:aa:
-        0a:72:78:87
+        6f:35:f8:2f:d6:6e:f7:c6:99:13:a6:56:eb:bf:b9:06:9d:c0:
+        77:46:f6:17:31:45:b2:16:b1:4b:97:26:ef:29:7f:5f:c9:3b:
+        81:f5:88:bb:8d:e2:b6:43:de:cc:8c:14:85:b2:fc:df:dc:5a:
+        a7:07:d3:a8:15:82:8e:a8:0a:a2:59:0c:7b:1a:41:a9:d1:8c:
+        6e:96:0d:15:9d:74:67:ac:34:e7:ec:d5:3b:53:9f:46:c5:26:
+        7d:6a:22:f0:5d:2c:69:7b:a9:43:68:76:59:3e:75:8b:5e:8e:
+        44:b3:d2:7b:9f:98:ad:7e:57:c3:12:73:b2:87:63:d6:c5:36:
+        87:49:20:2a:81:b7:28:6c:6f:08:17:47:cb:7c:fc:35:86:d1:
+        82:7d:b7:5a:4c:cb:45:ad:01:da:47:94:56:32:5a:00:d3:01:
+        ec:fe:e4:81:32:c0:68:0b:41:bd:da:f6:b7:03:3c:ab:7f:2d:
+        34:52:e0:c3:a0:ac:de:15:43:32:15:f9:79:b5:ed:b1:1e:f7:
+        4e:7a:2c:a7:aa:32:da:d3:83:e0:a1:12:11:e2:05:57:79:d5:
+        98:8a:b6:45:ef:79:4d:b1:68:8a:7e:06:38:f8:be:29:d6:66:
+        96:01:f3:e8:76:bc:3a:b0:7f:04:a2:15:8e:4c:6f:c9:21:12:
+        c5:1a:0e:c2
 ```
