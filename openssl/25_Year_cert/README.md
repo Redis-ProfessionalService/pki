@@ -1,7 +1,7 @@
 ```
 # Valid until 
 openssl x509  -in myserver.crt   -noout -text -nameopt sep_multiline
-
+# valid Until Jul 13 20:08:33 2049 GMT
 
 Certificate:
     Data:
