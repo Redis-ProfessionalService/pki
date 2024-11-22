@@ -78,6 +78,7 @@ Certificate:
 ```
 </details>
 
+
 ### myserver.crt valid until  Mar  5 17:53:19 2074 GMT
 ```
 openssl x509  -in myserver.crt      -noout -text -nameopt sep_multiline
