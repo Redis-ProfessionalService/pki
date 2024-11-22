@@ -1,7 +1,13 @@
 
 https://github.com/GoogleCloudPlatform/community/blob/master/archived/nginx-ingress-gke/index.md
 
+
 ```
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+```
+```
+## install nginx-ingress 
 helm install nginx-ingress ingress-nginx/ingress-nginx --set "controller.extraArgs.enable-ssl-passthrough=true"
 ```
 
