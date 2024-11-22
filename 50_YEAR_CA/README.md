@@ -4,7 +4,7 @@
 ### Certificate is valid for pki-redis.com and *.pki-redis.com ( such as demo.pki-redis.com)
 
 
-####  How to Certificate to GKE as secret
+####  How to create certificate for GKE as secret
 ```
 kubectl create secret tls redis-cert  --key myserver.key --cert  myserver.crt
 ```
