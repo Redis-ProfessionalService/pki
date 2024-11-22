@@ -9,6 +9,12 @@
 kubectl create secret tls redis-cert  --key myserver.key --cert  myserver.crt
 ```
 
+#### use the secret in ingress with following <a href="ingress.yaml"> ingress.yaml </a>. 
+```
+ tls:
+  -  secretName: redis-cert
+```
+
 ###  <a href="cacert.crt"> root certificate </a>
 <details>
   <summary>root certificate</summary>
