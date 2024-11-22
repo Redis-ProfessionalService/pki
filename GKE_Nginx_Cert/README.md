@@ -1,4 +1,10 @@
 
+https://github.com/GoogleCloudPlatform/community/blob/master/archived/nginx-ingress-gke/index.md
+
+```
+helm install nginx-ingress ingress-nginx/ingress-nginx --set "controller.extraArgs.enable-ssl-passthrough=true"
+```
+
 ```
 
 kubectl get secrets nginx-ingress-ingress-nginx-admission -o yaml
