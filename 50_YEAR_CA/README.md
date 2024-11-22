@@ -17,7 +17,7 @@ kubectl create secret tls redis-cert  --key myserver.key --cert  myserver.crt
 
 <br><br>
 ###  How to add the root CA to your mac keychain. 
-#### Eventually you would see the connection secure message
+#### Eventually you would see the connection is secure message on the browser
 <br><br>
 ![MAC](images/04_keychain.png)
 
