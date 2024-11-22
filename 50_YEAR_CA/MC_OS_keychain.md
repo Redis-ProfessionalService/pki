@@ -7,7 +7,7 @@
 <br><br>
 ![MAC](images/01_keychain.png)
 <br><br>
-- Drag in the cacert.crt file
+- click the certificate and choose always trust
 <br><br>
 ![MAC](images/02_keychain.png)
 <br><br>
