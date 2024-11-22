@@ -80,7 +80,7 @@ Certificate:
 
 </details>
 
-### <a href="cmyserver.crt"> server certificate </a>
+### <a href="myserver.crt"> server certificate </a>
 <details>
   <summary>server certificate</summary>
 
