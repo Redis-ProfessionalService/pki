@@ -15,6 +15,10 @@ kubectl create secret tls redis-cert  --key myserver.key --cert  myserver.crt
   -  secretName: redis-cert
 ```
 
+
+#### How to add the root CA to your mac keychain.
+![MAC](03_keychain.png)
+
 ###  <a href="cacert.crt"> root certificate </a>
 <details>
   <summary>root certificate</summary>
