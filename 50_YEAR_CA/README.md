@@ -1,7 +1,7 @@
 
 ## Self signed trusted certificate for 50 years.
 
-### Certificate is valid for pki-redis.com and *.pki-redis.com ( such as demo.pki-redis.com)
+### This certificate is valid for pki-redis.com and *.pki-redis.com ( such as demo.pki-redis.com)
 
 
 ####  How to create certificate for GKE as secret
