@@ -1,6 +1,8 @@
 
 ## Self signed trusted certificate for 50 years.
 
+### certificate is valid for pki-redis.com and *.pki-redis.com ( such as demo.pki-redis.com)
+
 
 
 ###  <a href="cacert.crt"> root certificate </a>
