@@ -85,6 +85,8 @@ Certificate:
   <summary>server certificate</summary>
 
 ```
+openssl x509  -in myserver.crt      -noout -text -nameopt sep_multiline
+
 Certificate:
     Data:
         Version: 3 (0x2)
