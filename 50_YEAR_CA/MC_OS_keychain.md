@@ -1,7 +1,9 @@
 
 - Open Key Chain Access App on your mac
 <br><br>
-![MAC](images/00_keychain.png)
+![MAC](images/00_keychain.png =100x20 )
+<br><br>
+- Open Key Chain Access App on your mac
 <br><br>
 ![MAC](images/01_keychain.png)
 <br><br>
