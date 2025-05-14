@@ -126,12 +126,7 @@ cat client.crt intermediate_1_ca.crt root_ca.crt > client_chain.crt
 ![mtls1](./image/image1.png)
 ![mtls2](./image/image2.png)
 ![mtls3](./image/image3.png)
-image3.png
 
-
-1) add the ca_chain.crt as Explicit Trust.
-2) Click the By Subject Alternative Name(SAN)/Common Name(CN) only
-3) Add www.client.com as CN name
 
 
 ### Redis client
