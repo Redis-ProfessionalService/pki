@@ -1,4 +1,4 @@
-### setup the env for cluser username and password
+### Setup the env for cluser username and password
 ```
 export USERNAME=admin@redis.com
 export PASSWORD=1234
