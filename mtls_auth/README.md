@@ -18,15 +18,12 @@ default_md = sha256
 distinguished_name = dn
 
 [dn]
-C = IL
-ST = Tel-Aviv
-L = Locality
-O = RootCAOrg
-OU = Security
-CN = www.root-ca-org.com
+C = US
+CN = ANY
 
 [req_ext]
 basicConstraints = critical, CA:TRUE
+extendedKeyUsage = clientAuth
 
 ```
 
