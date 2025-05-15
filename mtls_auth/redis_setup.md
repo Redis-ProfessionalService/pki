@@ -55,4 +55,4 @@ https://localhost:9443/v1/users
 {"action_uid":"5bb5c0c6-68d6-4e3e-8eb7-606442b12aee","auth_method":"certificate","certificate_subject_line":"C=US,CN=abc","email":"","email_alerts":true,"name":"abc-user","role":"none","role_uids":[2],"status":"active","uid":2}
 ```
 
-![mtls1](./image/db-image-1.png)
+![Setup db name and port](./images/db-image-1.png)
