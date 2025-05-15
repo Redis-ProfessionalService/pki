@@ -100,7 +100,4 @@ openssl x509 -req -in abc_leaf.csr -CA abc_ca.crt -CAkey abc_ca.key -CAcreateser
 cat abc_leaf.crt abc_ca.crt root_ca.crt > abc_leaf_chain.crt
 ```
 
-```
-redis-cli -p 13000 --tls --insecure  --cert  abc_leaf_chain.crt   --key abc_leaf.key
-ACL WHOAMI  
-```
+
