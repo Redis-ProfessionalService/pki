@@ -5,9 +5,8 @@
 
 Allow customers to configure certificate based authentication with RBAC on a new/existing cluster for data plane - client to database authentication. <br>
 
-A client certificate with a specific identity (e.g., C=US,CN=abc), and then configure Redis Enterprise to map this certificate to a user for authentication. <br>
+A client certificate with a specific identity (e.g., C=US,CN=abc), and then configure Redis Enterprise to map this certificate to a user for authentication and authorization. <br>
 
-This is for x.509 certificate-based authentication, where Redis Enterprise uses the certificate’s Subject DN (Distinguished Name) to identify and authorize the user.<br>
 
 ---
 Redis Enterprise uses the subject line (e.g. C=US,CN=abc) from the client certificate to identify and associate the connection with a specific user.
