@@ -69,5 +69,5 @@ openssl genpkey -algorithm RSA -out abc_leaf.key
 
 ```
 openssl req -new -key abc_leaf.key -out abc_leaf.csr -config abc_leaf.cnf
-openssl x509 -req -in abc_ca.csr -CA abc_ca.crt -CAkey abc_ca.key -CAcreateserial -out abc_leaf.crt -days 1825 -sha256 -extfile abc_leaf.cnf -extensions req_ext
+openssl x509 -req -in abc_leaf.csr -CA abc_ca.crt -CAkey abc_ca.key -CAcreateserial -out abc_leaf.crt -days 1825 -sha256 -extfile abc_leaf.cnf -extensions req_ext
 ```
