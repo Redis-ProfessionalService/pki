@@ -1,4 +1,24 @@
 
+###
+# create a user  "certificate_subject_line": "C=US,CN=abc",
+```
+read -r -d '' payload <<EOF
+{
+    "auth_method": "certificate",
+    "certificate_subject_line": "C=US,CN=abc",
+    "name": "abc",
+    "role_uids": [
+      2
+    ]
+}
+EOF
+
+curl -k -u "admin@redis.com:1234" -X POST \
+-H "Content-Type: application/json" \
+-d "$payload" \
+https://localhost:9443/v1/users
+```
+
 ### Root CA
 First off, we need a private key: 
 ```
