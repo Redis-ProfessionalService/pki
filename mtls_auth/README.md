@@ -12,7 +12,7 @@ Redis Enterprise uses the subject line (e.g. C=US,CN=abc) from the client certif
 - [Create certificate chaim with "C=US,CN=abc"](./cert_setup.md)
   
 
-- Create a certificate based user and add the user and  certificate to a database.
+- [Create a certificate based user and add the user and  certificate to a database](redis_setup.md).
 ```
     "auth_method": "certificate",
     "certificate_subject_line": "C=US,CN=abc",
