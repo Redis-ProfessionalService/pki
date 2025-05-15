@@ -51,7 +51,24 @@ openssl x509 -in root_ca.crt -text
 ```bash
 openssl genpkey -algorithm RSA -out abc_ca.key
 ```
+#### abc_ca.cnf
+```
+# abc_ca.cnf
 
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+[dn]
+C = US
+CN = abc
+
+[req_ext]
+basicConstraints = critical, CA:TRUE
+extendedKeyUsage = clientAuth
+```
 ### Create CSR for Intermediate
 ```bash
 openssl req -new -key abc_ca.key -out abc_ca.csr -config abc_ca.cnf
