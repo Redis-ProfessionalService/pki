@@ -1,9 +1,9 @@
 
-### Create an ACL which restricted to keys starts with abc prefix
+### Create an ACL (abc-acl) which is restricted to keys starts with abc prefix
 ```
 curl -k -u "<usrname>:<password>" -X POST \
 -H "Content-Type: application/json" \
--d '{ "name": "abc", "acl": "~abc +@all" }' \
+-d '{ "name": "abc-acl", "acl": "~abc +@all" }' \
 https://localhost:9443/v1/redis_acls
 ```
 #### Output
