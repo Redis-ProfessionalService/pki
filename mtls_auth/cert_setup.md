@@ -103,6 +103,25 @@ cat abc_ca.crt root_ca.crt > abc_ca_chain.crt
 openssl genpkey -algorithm RSA -out abc_leaf.key
 ```
 
+#### abc_leaf.cnf
+```
+# abc_leaf.cnf
+
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+[dn]
+C = US
+CN = abc
+
+[req_ext]
+basicConstraints = critical, CA:TRUE
+extendedKeyUsage = clientAuth
+```
+
 ### Create CSR for Leaf
 ```bash
 openssl req -new -key abc_leaf.key -out abc_leaf.csr -config abc_leaf.cnf
