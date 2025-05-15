@@ -136,7 +136,7 @@ openssl x509 -req -in abc_leaf.csr -CA abc_ca.crt -CAkey abc_ca.key \
 
 ---
 
-## 🔗 (Optional) Repeat Certificate Chain Creation
+## 🔗 Certificate Chain for leaf
 
 ```bash
 cat abc_ca.crt root_ca.crt > abc_ca_chain.crt
