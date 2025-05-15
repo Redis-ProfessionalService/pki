@@ -60,9 +60,9 @@ https://localhost:9443/v1/users
 ![Setup db name and port](./images/db-image-1.png)
 
 #### TLS and mTLS
-![Setup tls name and mtls(./images/db-image-2.png)
+![Setup tls name and mtls](./images/db-image-2.png)
 
-#### add Cert chian from 
+#### add Cert chian from  abc_ca_chain.crt
 ![Setup cert chain](./images/db-image-3.png)
 
 #### add role, user and acl
