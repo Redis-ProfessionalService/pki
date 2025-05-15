@@ -3,7 +3,7 @@
 
 [Why Enterprises Should Use Certificate-based Authentication as Access Control](https://www.globalsign.com/en/blog/what-is-certificate-based-authentication)<br>
 
-Allow customers to configure certificate based authentication with RBAC on a new/existing cluster for data plane - client to database authentication. <br>
+Allow customers to configure certificate based authentication with RBAC on a new/existing cluster for data plane - client to database authentication and authorization. <br>
 
 A client certificate with a specific identity (e.g., C=US,CN=abc), and then configure Redis Enterprise to map this certificate to a user for authentication and authorization. <br>
 
