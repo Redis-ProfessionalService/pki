@@ -51,5 +51,6 @@ extendedKeyUsage = clientAuth
 Generating the intermediate private key:
 ```
 openssl genpkey -algorithm RSA -out abc_ca.key
-
+openssl x509 -req -in abc_ca.csr -CA root_ca.crt -CAkey root_ca.key -CAcreateserial -out abc_ca.crt -days 1825 -sha256 -extfile abc_ca.cnf -extensions req_ext
+openssl x509 -in abc_ca.crt -text
 ```
