@@ -1,0 +1,15 @@
+# abc_ca.cnf
+
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+[dn]
+C = US
+CN = abc
+
+[req_ext]
+basicConstraints = critical, CA:TRUE
+extendedKeyUsage = clientAuth
