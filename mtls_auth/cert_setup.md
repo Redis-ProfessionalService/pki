@@ -149,5 +149,6 @@ cat abc_leaf.crt abc_ca.crt root_ca.crt > abc_leaf_chain.crt
 You now have:
 - Root CA (`root_ca.crt`)
 - Intermediate CA (`abc_ca.crt`)
+- Intermediate CA chain (abc_ca_chain.crt)
 - Leaf Certificate (`abc_leaf.crt`)
 - Certificate Chain (`abc_ca_chain.crt`)
