@@ -11,7 +11,7 @@ A client certificate with a specific identity (e.g., C=US,CN=abc), and then conf
 ---
 Redis Enterprise uses the subject line (e.g. C=US,CN=abc) from the client certificate to identify and associate the connection with a specific user.
 
-- [Create certificate chaim with "C=US,CN=abc"](./cert_setup.md)
+- [Create certificate chain with "C=US,CN=abc"](./cert_setup.md)
   
 
 - [Create a certificate based user and add the user and  certificate to a database](redis_setup.md).
