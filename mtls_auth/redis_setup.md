@@ -31,7 +31,7 @@ https://localhost:9443/v1/roles
 {"management":"none","name":"abc-role","uid":2}
 ```
 
-### Create uset (abc-usr) assign the role to abc-role by (role_uids = 2 )
+### Create user (abc-usr). Assign the role to abc-role by (role_uids = 2 )
 ```
 read -r -d '' payload <<EOF
 {
