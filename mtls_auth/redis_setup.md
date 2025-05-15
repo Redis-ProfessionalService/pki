@@ -73,4 +73,4 @@ https://localhost:9443/v1/users
 <br>
 
 #### Final setup
-![Setup Final(./images/db-image-5.png)
+![Setup Final](./images/db-image-5.png)
