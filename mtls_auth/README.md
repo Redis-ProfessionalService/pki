@@ -81,7 +81,7 @@ openssl x509 -in abc_ca.crt -text
 ```
 
 ```
-cat abc_ca.crt  root_ca.crt > ca_chain.crt
+cat abc_ca.crt  root_ca.crt > abc_ca_chain.crt
 ```
 
 
