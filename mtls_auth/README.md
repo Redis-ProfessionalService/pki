@@ -61,6 +61,11 @@ openssl x509 -req -in abc_ca.csr -CA root_ca.crt -CAkey root_ca.key -CAcreateser
 openssl x509 -in abc_ca.crt -text
 ```
 
+```
+cat abc_ca.crt  root_ca.crt > ca_chain.crt
+```
+
+
 ### abc leaf crt
 ```
 openssl genpkey -algorithm RSA -out abc_leaf.key
@@ -70,4 +75,13 @@ openssl genpkey -algorithm RSA -out abc_leaf.key
 ```
 openssl req -new -key abc_leaf.key -out abc_leaf.csr -config abc_leaf.cnf
 openssl x509 -req -in abc_leaf.csr -CA abc_ca.crt -CAkey abc_ca.key -CAcreateserial -out abc_leaf.crt -days 1825 -sha256 -extfile abc_leaf.cnf -extensions req_ext
+```
+
+```
+cat abc_leaf.crt abc_ca.crt root_ca.crt > abc_leaf_chain.crt
+```
+
+```
+redis-cli -p 13000 --tls --insecure  --cert  abc_leaf_chain.crt   --key abc_leaf.key
+ACL WHOAMI  
 ```
