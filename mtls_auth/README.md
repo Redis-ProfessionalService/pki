@@ -48,9 +48,16 @@ CN = ABC
 basicConstraints = critical, CA:TRUE
 extendedKeyUsage = clientAuth
 ```
-Generating the intermediate private key:
+
+###I Generating the intermediate private key:
 ```
 openssl genpkey -algorithm RSA -out abc_ca.key
+```
+
+```
+openssl req -new -key abc_ca.key -out abc_ca.csr -config abc_ca.cnf
 openssl x509 -req -in abc_ca.csr -CA root_ca.crt -CAkey root_ca.key -CAcreateserial -out abc_ca.crt -days 1825 -sha256 -extfile abc_ca.cnf -extensions req_ext
+
 openssl x509 -in abc_ca.crt -text
+```
 ```
