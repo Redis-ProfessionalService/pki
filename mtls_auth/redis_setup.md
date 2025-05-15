@@ -58,13 +58,17 @@ https://localhost:9443/v1/users
 ### Setup the database
 #### Name and port
 ![Setup db name and port](./images/db-image-1.png)
+<br>
 
 #### TLS and mTLS
 ![Setup tls name and mtls](./images/db-image-2.png)
+<br>
 
-#### add Cert chian from  abc_ca_chain.crt
+#### Add Cert chian from  abc_ca_chain.crt
 ![Setup cert chain](./images/db-image-3.png)
+<br>
 
-#### add role, user and acl
+#### Add role, user and acl
 ![Setup cert chain](./images/db-image-4.png)
+<br>
 
