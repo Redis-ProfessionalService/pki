@@ -1,6 +1,5 @@
 
-###
-# create a user  "certificate_subject_line": "C=US,CN=abc",
+### create a user  "certificate_subject_line": "C=US,CN=abc",
 ```
 read -r -d '' payload <<EOF
 {
