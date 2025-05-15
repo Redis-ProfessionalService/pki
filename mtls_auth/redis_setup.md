@@ -30,3 +30,27 @@ https://localhost:9443/v1/roles
 ```
 {"management":"none","name":"abc-role","uid":2}
 ```
+
+### Create uset (abc-usr) assign the role to abc-role by (role_uids = 2 )
+```
+read -r -d '' payload <<EOF
+{
+    "auth_method": "certificate",
+    "certificate_subject_line": "C=US,CN=abc",
+    "name": "abc-user",
+    "role_uids": [
+      2
+    ]
+}
+EOF
+
+curl -k -u "$USERNAME:$PASSWORD" -X POST \
+-H "Content-Type: application/json" \
+-d "$payload" \
+https://localhost:9443/v1/users
+```
+
+#### out
+```
+{"action_uid":"5bb5c0c6-68d6-4e3e-8eb7-606442b12aee","auth_method":"certificate","certificate_subject_line":"C=US,CN=abc","email":"","email_alerts":true,"name":"abc-user","role":"none","role_uids":[2],"status":"active","uid":2}
+```
