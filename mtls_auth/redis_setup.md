@@ -72,3 +72,5 @@ https://localhost:9443/v1/users
 ![Setup cert chain](./images/db-image-4.png)
 <br>
 
+#### Final setup
+![Setup Final(./images/db-image-5.png)
