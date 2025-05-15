@@ -1,6 +1,6 @@
 
 ### Root CA
-First off, we need a private key:
+First off, we need a private key: 
 ```
 openssl genpkey -algorithm RSA -out root_ca.key
 ```
