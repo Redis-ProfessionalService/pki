@@ -60,4 +60,14 @@ openssl x509 -req -in abc_ca.csr -CA root_ca.crt -CAkey root_ca.key -CAcreateser
 
 openssl x509 -in abc_ca.crt -text
 ```
+
+### abc leaf crt
+```
+openssl genpkey -algorithm RSA -out abc_leaf.key
+
+```
+
+```
+openssl req -new -key abc_leaf.key -out abc_leaf.csr -config abc_leaf.cnf
+
 ```
