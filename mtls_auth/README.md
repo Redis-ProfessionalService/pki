@@ -31,3 +31,25 @@ extendedKeyUsage = clientAuth
 openssl req -x509 -new -nodes -key root_ca.key -sha256 -days 3650 -out root_ca.crt -config root_ca.cnf -extensions req_ext
 openssl x509 -in root_ca.crt -text
 ```
+
+### Intermediate ABC CA 
+```
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+[dn]
+C = US
+CN = ABC
+
+[req_ext]
+basicConstraints = critical, CA:TRUE
+extendedKeyUsage = clientAuth
+```
+Generating the intermediate private key:
+```
+openssl genpkey -algorithm RSA -out abc_ca.key
+
+```
