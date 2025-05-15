@@ -1,4 +1,7 @@
 
+## Using certificate based authentication with RBAC with Redis Enterprise:
+Allow customers to configure certificate based authentication with RBAC on a new/existing cluster for data plane - client to database authentication.
+
 
 #### how to login to the database with "abc-user" using certificate
 ```
