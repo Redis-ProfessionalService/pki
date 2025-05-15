@@ -15,6 +15,22 @@ This guide walks through creating a 3-tier certificate chain using OpenSSL:
 ```bash
 openssl genpkey -algorithm RSA -out root_ca.key
 ```
+#### root_ca.cnf
+```
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+[dn]
+C = US
+CN = ANY
+
+[req_ext]
+basicConstraints = critical, CA:TRUE
+extendedKeyUsage = clientAuth
+```
 
 ### Create Self-Signed Root Certificate
 ```bash
