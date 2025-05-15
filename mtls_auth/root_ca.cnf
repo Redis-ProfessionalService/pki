@@ -6,7 +6,7 @@ distinguished_name = dn
 
 [dn]
 C = US
-CN = bar
+CN = ANY
 
 [req_ext]
 basicConstraints = critical, CA:TRUE
