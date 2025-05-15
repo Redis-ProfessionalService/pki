@@ -9,7 +9,7 @@ This is for x.509 certificate-based authentication, where Redis Enterprise uses 
 ---
 Redis Enterprise uses the subject line (e.g. C=US,CN=abc) from the client certificate to identify and associate the connection with a specific user.
 
-- Create certificate chaim with "C=US,CN=abc" 
+- ![Create certificate chaim with "C=US,CN=abc"](./cert_setup.md)
   
 
 - Create a certificate based user and add the user and  certificate to a database.
