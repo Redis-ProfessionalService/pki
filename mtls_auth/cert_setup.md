@@ -57,7 +57,7 @@ openssl genpkey -algorithm RSA -out abc_ca.key
 #### abc_ca.cnf
 ```
 # abc_ca.cnf
-
+cat > abc_ca.cnf <<'EOF'
 [req]
 default_bits = 2048
 prompt = no
@@ -71,6 +71,7 @@ CN = abc
 [req_ext]
 basicConstraints = critical, CA:TRUE
 extendedKeyUsage = clientAuth
+EOF
 ```
 ### Create CSR for Intermediate
 ```bash
