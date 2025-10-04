@@ -110,7 +110,7 @@ openssl genpkey -algorithm RSA -out abc_leaf.key
 #### abc_leaf.cnf
 ```
 # abc_leaf.cnf
-
+cat > abc_leaf.cnf <<'EOF'
 [req]
 default_bits = 2048
 prompt = no
@@ -124,6 +124,7 @@ CN = abc
 [req_ext]
 basicConstraints = critical, CA:TRUE
 extendedKeyUsage = clientAuth
+EOF
 ```
 
 ### Create CSR for Leaf
