@@ -17,6 +17,7 @@ openssl genpkey -algorithm RSA -out root_ca.key
 ```
 #### root_ca.cnf
 ```
+cat > root_ca.cnf <<'EOF'
 [req]
 default_bits = 2048
 prompt = no
@@ -30,6 +31,8 @@ CN = ANY
 [req_ext]
 basicConstraints = critical, CA:TRUE
 extendedKeyUsage = clientAuth
+EOF
+
 ```
 
 ### Create Self-Signed Root Certificate
