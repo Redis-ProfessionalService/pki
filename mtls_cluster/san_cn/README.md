@@ -109,7 +109,7 @@ curl -k -v https://${URL}:9443/v1/nodes   --cert client.crt --key client.key
 Run scripts in the following order:
 
 ```bash
-source 01_cert_chan.sh
+source 01_cert_chain.sh
 source 02_load_cert.sh
 source 03_update_mtls_trusted_ca_cluster.sh
 source 04_create_user.sh
