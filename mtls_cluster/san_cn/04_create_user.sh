@@ -1,13 +1,14 @@
 source 00_env.sh
 
 curl -k -v -u "$USERNAME:$PASSWORD" \
-  -X POST "https://localhost:9443/v1/users" \
+  -X POST "https://${URL}:9443/v1/users" \
   -H "Content-Type: application/json" \
   -d "{
     \"auth_method\": \"certificate\",
     \"certificate_subject_line\": \"CN=${CN}\",
-    \"email\": \"cert_user@redis.com\",
+    \"email\": \"${CERT_ADMIN_USER_EMAIL}\",
     \"email_alerts\": true,
-    \"name\": \"cert_user\",
+    \"name\": \"${CERT_ADMIN_USER}\",
     \"role_uids\": [1]
   }"
+
