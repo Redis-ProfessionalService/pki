@@ -1,8 +1,14 @@
 # mTLS Setup for Redis Cluster API
+## [For certificate validation by Subject Alternative Name (SAN)](https://redis.io/docs/latest/operate/rs/security/certificates/certificate-based-authentication/#config-cluster)
+
 
 This repository contains shell scripts to automate the creation, configuration, and testing of **mutual TLS (mTLS)** authentication for a Redis cluster management API running on HTTPS port **9443**.
 
 https://redis.io/docs/latest/operate/rs/security/certificates/certificate-based-authentication/
+
+---
+
+
 
 ---
 
