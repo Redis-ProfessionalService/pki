@@ -1,4 +1,4 @@
-# mTLS Setup for Redis Cluster API
+# [mTLS Setup for Redis Cluster API](https://redis.io/docs/latest/operate/rs/security/certificates/certificate-based-authentication/)
 ## [For certificate validation by Subject Alternative Name (SAN)](https://redis.io/docs/latest/operate/rs/security/certificates/certificate-based-authentication/#config-cluster)
 
 
