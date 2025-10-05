@@ -55,6 +55,11 @@ Uploads the **trusted CA certificate chain** to the Redis cluster via REST API.
   PUT https://<URL>:9443/v1/cluster/update_cert
   ```
 
+  #### For Redis Enterprise Software versions 7.22.2 and later, use:
+  ```
+   PUT /v1/cluster/certificates
+  ```
+
 ---
 
 ### `03_update_mtls_trusted_ca_cluster.sh`
