@@ -33,7 +33,7 @@ export CERT_ADMIN_USER_EMAIL=cert_admin_user@redis.com
 
 ---
 
-### `01_cert_chan.sh`
+### `01_cert_chain.sh`
 Generates the **root CA**, **server certificate**, and **server certificate chain**.
 
 Steps:
