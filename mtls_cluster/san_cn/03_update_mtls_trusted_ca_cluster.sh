@@ -1,10 +1,7 @@
 source 00_env.sh
 
-
-source 00_env.sh
-
 curl -k -u "$USERNAME:$PASSWORD" \
-  -X PUT "https://localhost:9443/v1/cluster" \
+  -X PUT "https://${URL}:9443/v1/cluster" \
   -H "Content-Type: application/json" \
   -d "{
     \"mtls_certificate_authentication\": true,
@@ -13,3 +10,4 @@ curl -k -u "$USERNAME:$PASSWORD" \
       { \"CN\": \"${CN}\" }
     ]
   }"
+  
