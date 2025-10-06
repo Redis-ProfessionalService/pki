@@ -120,7 +120,10 @@ Run scripts in the following order:
 
 ```bash
 source 01_cert_chain.sh
-source 02_load_cert.sh
+# If 7.8:
+  source 02_load_cert.sh
+# If 7.22+
+  source 02_load_cert_7.22_later.sh 
 source 03_update_mtls_trusted_ca_cluster.sh
 source 04_create_user.sh
 source 05_create_client_cert.sh
