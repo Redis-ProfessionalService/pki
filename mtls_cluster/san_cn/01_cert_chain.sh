@@ -23,8 +23,8 @@ openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial \
   -out server.crt -days 365 -sha256   
   
 #openssl x509 -in server.crt  -text 
-openssl x509 -in client.crt -noout -subject
-openssl req -in client.csr -noout -subject -nameopt multiline
+openssl x509 -in server.crt -noout -subject
+openssl req -in server.csr -noout -subject -nameopt multiline
 
 ################ create the chain ################
 cat ca.crt server.crt > server_chain.crt  
